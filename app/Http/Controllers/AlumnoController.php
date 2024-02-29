@@ -17,7 +17,6 @@ class AlumnoController extends Controller
     public function index()
     {
         $alumnos= Alumno::all();
-//        return response()->json($alumnos);
         return new AlumnoCollection($alumnos);
         //
     }
